@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Topics</title>
+  </head>
+  <body>
+    <table border="2px">
+      <tr>
+        <th>PK</th>
+        <th>Topic Name</th>
+        <th>Name</th>
+        <th>URL</th>
+        <th>Email</th>
+      </tr>
+
+      {% for TO in LWO %}
+      <tr>
+        <td>{{ TO.pk }}</td>
+        <td>{{ TO.topic_name }}</td>
+        <td>{{ TO.name }}</td>
+        <td>{{ TO.url }}</td>
+        <td>{{ TO.email }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

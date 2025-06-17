@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Records</title>
+  </head>
+  <body>
+    <table border="2px">
+      <tr>
+        <th> Name</th>
+        <th>Author</th>
+        <th>Date</th>
+        
+      </tr>
+
+      {% for TO in LAO %}
+      <tr>
+        <td>{{ TO.name }}</td>
+        <td>{{ TO.author }}</td>
+        <td>{{ TO.date }}</td>
+    
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
