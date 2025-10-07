@@ -1,2 +1,2 @@
 # Django
-This Repository Contains Notes and Projects of Djang
+This Repository Contains Notes and Projects of Django
